@@ -20,6 +20,15 @@ class Some_obj(object):
 
 if __name__ == '__main__':
     obj = Some_obj(5)
+    print(f'obj.some_property = {obj.some_property} before with')
     with simple_context_manager(obj):
-        print(obj.some_property)
-        print(obj.some_property)
+        print(f'obj.some_property = {obj.some_property} inside with')
+        print(f'obj.some_property = {obj.some_property} inside with')
+    print(f'obj.some_property = {obj.some_property} after with')
+
+# obj.some_property = 5 before with
+# Starting with 5
+# obj.some_property = 6 inside with
+# obj.some_property = 6 inside with
+# Reverted to 5
+# obj.some_property = 5 after with

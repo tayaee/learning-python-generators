@@ -18,3 +18,9 @@ if __name__ == '__main__':
         f.write("Test log 1\n")
         f.write("Test log 2\n")
         f.write("Test log 3\n")
+
+# ---- begin of log ----
+# Test log 1
+# Test log 2
+# Test log 3
+# ---- end of log ---
